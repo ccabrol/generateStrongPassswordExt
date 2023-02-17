@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Strong Password Generator</title>
+  <style>
+    body {
+      min-width: 300px;
+      font-size: 15px;
+    }
+
+    input {
+      margin: 5px;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <form id="passwordparameters">
+        <!-- checkbox with 'Upper case?'-->
+        <input type="checkbox" id="upperCase" name="upperCase" value="upperCase">
+        <label for="upperCase">Upper case?</label>
+        <br>
+        <!-- checkbox with 'Numbers?'-->
+        <input type="checkbox" id="numbers" name="numbers" value="numbers">
+        <label for="numbers">Numbers?</label>
+        <br>
+        <!-- checkbox with 'Symbols?'-->
+        <input type="checkbox" id="symbols" name="symbols" value="symbols">
+        <label for="symbols">Symbols?</label>
+        <br>
+        <!-- scrollbar with length and display number on top-->
+        
+        <label for="length">Length:</label>
+        <span id="value"></span>
+        <input type="range" id="length" name="length" min="8" max="32" value="16">
+
+        <br>
+        <!-- checkbox with 'Copy Generated password to clipboard?'-->
+        <input type="checkbox" id="clipboard" name="clipboard" value="clipboard">
+        <label for="clipboard">Copy Generated password to clipboard?</label>
+        <br>
+        <!-- button with 'Save'-->
+        <input type="button" id="save" name="save" value="Save">
+        <br>
+    </form>
+    
+  </div>
+
+<script src="popup.js"></script>
+</body>
+
+</html>
